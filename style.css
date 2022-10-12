@@ -1,0 +1,229 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root {
+  --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position:sticky;
+  top: 0px;
+}
+
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+/* Navigation bar : Logo and image */
+
+#logo {
+  margin: 23px 11px;
+  height: 117px;
+}
+
+#logo img {
+  margin: 3px 9px;
+  height: 126px;
+}
+
+/* Navigation bar : List Styling */
+#navbar ul {
+  font-family: "PT Sans Narrow", sans-serif;
+  display: flex;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 23px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: aqua;
+  background-color: red;
+}
+/* Home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  height: 327px;
+  padding: 3px 200px;
+ 
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  background: url("../Img/Logo/pizza.png") no-repeat center center/cover;
+
+  position: absolute;
+  height: 515px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+#home h1 {
+  color: white;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Bree Serif", serif;
+}
+
+/* Services section */
+#services {
+  margin: 34px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 34px;
+  margin:25px 50px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  background: #cfcbcb;
+}
+#services .box img {
+  height: 156px;
+  margin: auto;
+  display: block;
+}
+#services .box p{
+
+
+  font-family: "Bree Serif", serif;
+}
+
+/* Client Section */
+#client-section{
+  position: relative ;
+  
+}
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.client-item{
+  padding: 34px ;
+}
+#clients img{
+
+  height: 124px;
+
+
+}
+#client-section::before{
+  content:"";
+  position: absolute;
+  background: url("../Img/food/Breakfast.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+/* Contact-Us Section */
+#contact{
+  position: relative;
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url("../Img/Logo/2.png") no-repeat center center/cover;
+
+
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+
+}
+#contact-box form{
+  width: 40%;
+  
+
+}
+#contact-box form label{
+  font-size: 1.3rem;
+  font-family: "Bree Serif", serif;
+  
+  
+
+}
+#contact-box input,
+#contact-box textarea{
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+
+}
+footer{
+  color:white;
+  background-color: black;
+  padding: 9px 20px;
+
+}
+
+
+
+/* Utility Classes */
+.h-primary {
+  font-family: "Bree Serif", serif;
+  font-size: 3.8rem;
+  padding: 12px;
+}
+.h-secondary {
+  font-family: "Bree Serif", serif;
+  font-size: 2.3rem;
+  padding: 12px;
+}
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: rgb(31, 195, 5);
+  color: white;
+  font-size: 1.5rem;
+  margin: 17px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.center {
+  text-align: center;
+}
